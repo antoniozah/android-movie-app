@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+
+
+    <string name="fragment_title_1">Fragment TV Shows</string>
+    <string name="fragment_title_2">Fragment TV Show Detail</string>
+
+</resources>
