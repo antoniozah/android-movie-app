@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--┌───────────────────────────────────────────────────────────────────────────────────┐-->
+    <!--  → TEXT STYLES [ REGULAR ] -->
+    <!--└───────────────────────────────────────────────────────────────────────────────────┘-->
+
+    <style name="Theme.MovieApp.Text.H1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="fontFamily">@font/opensans_bold</item>
+        <item name="android:textSize">@dimen/h1</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.H2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="fontFamily">@font/opensans_bold</item>
+        <item name="android:textSize">@dimen/h2</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.H3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="fontFamily">@font/opensans_bold</item>
+        <item name="android:textSize">@dimen/h3</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.H4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="fontFamily">@font/opensans_bold</item>
+        <item name="android:textSize">@dimen/h4</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.H5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="fontFamily">@font/opensans_bold</item>
+        <item name="android:textSize">@dimen/h5</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.H6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="fontFamily">@font/opensans_bold</item>
+        <item name="android:textSize">@dimen/h6</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.P1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">@dimen/p1</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.P2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">@dimen/p2</item>
+        <item name="android:alpha">?alphaEmphasisMedium</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">@dimen/caption</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.Caption.Small" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">@dimen/caption_small</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.Chip" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="fontFamily">@font/opensans_bold</item>
+        <item name="android:textSize">@dimen/chip</item>
+    </style>
+
+    <!--┌───────────────────────────────────────────────────────────────────────────────────┐-->
+    <!--  → TEXT STYLES [ BOLD ] -->
+    <!--└───────────────────────────────────────────────────────────────────────────────────┘-->
+
+    <style name="Theme.MovieApp.Text.P1.Bold" parent="Theme.MovieApp.Text.P1">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="fontFamily">@font/opensans_bold</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.P2.Bold" parent="Theme.MovieApp.Text.P2">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="fontFamily">@font/opensans_bold</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.Caption.Bold" parent="Theme.MovieApp.Text.Caption">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="fontFamily">@font/opensans_bold</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.Caption.Small.Bold" parent="Theme.MovieApp.Text.Caption">
+        <item name="android:textSize">@dimen/caption_small</item>
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="fontFamily">@font/opensans_bold</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.Chip.Bold" parent="Theme.MovieApp.Text.Chip">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="fontFamily">@font/opensans_bold</item>
+    </style>
+
+    <!--┌───────────────────────────────────────────────────────────────────────────────────┐-->
+    <!--  → TEXT STYLES [ ITALIC ] -->
+    <!--└───────────────────────────────────────────────────────────────────────────────────┘-->
+
+    <style name="Theme.MovieApp.Text.Caption.Italic" parent="Theme.MovieApp.Text.Caption">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!--┌───────────────────────────────────────────────────────────────────────────────────┐-->
+    <!--  → TEXT STYLES [ HREF ] -->
+    <!--└───────────────────────────────────────────────────────────────────────────────────┘-->
+
+    <style name="Theme.MovieApp.Text.P1.Href" parent="Theme.MovieApp.Text.P1">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.P2.Href" parent="Theme.MovieApp.Text.P2">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <!--┌───────────────────────────────────────────────────────────────────────────────────┐-->
+    <!--  → TEXT STYLES [ LIGHT ] -->
+    <!--└───────────────────────────────────────────────────────────────────────────────────┘-->
+
+    <style name="Theme.MovieApp.Text.H1.Light" parent="Theme.MovieApp.Text.H1">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.H2.Light" parent="Theme.MovieApp.Text.H2">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.H3.Light" parent="Theme.MovieApp.Text.H3">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.H4.Light" parent="Theme.MovieApp.Text.H4">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.H5.Light" parent="Theme.MovieApp.Text.H5">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <style name="Theme.MovieApp.Text.H6.Light" parent="Theme.MovieApp.Text.H6">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <!--┌───────────────────────────────────────────────────────────────────────────────────┐-->
+    <!--  → UI ELEMENTS -->
+    <!--└───────────────────────────────────────────────────────────────────────────────────┘-->
+
+    <style name="Theme.MovieApp.BottomSheet" parent="Widget.MaterialComponents.NavigationView">
+        <!-- Remove any scrim insets applied by NavigationView for system bars. -->
+        <item name="insetForeground">@android:color/transparent</item>
+        <!-- Required to allow bottom sheet implement defined theme shape. -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="elevation">0dp</item>
+        <item name="itemTextAppearance">?attr/textAppearanceBody2</item>
+    </style>
+
+    <style name="Theme.MovieApp.Toolbar" parent="Widget.MaterialComponents.Toolbar.Surface">
+        <item name="titleTextAppearance">@style/Theme.MovieApp.Text.H6</item>
+        <item name="subtitleTextAppearance">@style/Theme.MovieApp.Text.P2</item>
+    </style>
+
+    <style name="Theme.MovieApp.Toolbar.Control">
+        <item name="colorControlNormal">?colorOnSurface</item>
+    </style>
+
+    <style name="Theme.MovieApp.Checkbox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="android:textAppearance">@style/Theme.MovieApp.Text.Subtitle1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.MovieApp.Alert.Dialog" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/secondary</item>
+        <item name="android:textColorPrimary">?colorOnSurface</item>
+        <!-- Used for the background -->
+        <item name="android:background">?colorSurface</item>
+    </style>
+
+    <!--  <item name="android:progressDrawable">@drawable/custom_rating_bar</item> -->
+
+    <style name="Theme.MovieApp.RatingBar.Indicator" parent="Widget.AppCompat.RatingBar.Indicator">
+        <item name="android:numStars">5</item>
+        <item name="android:progressBackgroundTint">?colorSecondaryVariant</item>
+        <item name="android:secondaryProgressTint">?colorSecondaryVariant</item>
+        <item name="android:progressTint">?colorSecondaryVariant</item>
+    </style>
+
+    <style name="Theme.MovieApp.RatingBar.Small" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="android:numStars">5</item>
+        <item name="android:progressBackgroundTint">?colorSecondaryVariant</item>
+        <item name="android:secondaryProgressTint">?colorSecondaryVariant</item>
+        <item name="android:progressTint">?colorSecondaryVariant</item>
+    </style>
+
+    <!--┌───────────────────────────────────────────────────────────────────────────────────┐-->
+    <!--  → BUTTONS -->
+    <!--└───────────────────────────────────────────────────────────────────────────────────┘-->
+
+    <style name="Theme.MovieApp.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+    </style>
+
+    <style name="Theme.MovieApp.Button.Outline" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+    </style>
+
+    <style name="Theme.MovieApp.Button.Outline.Alternative" parent="Theme.MovieApp.Button.Outline">
+        <item name="android:textColor">?colorSurface</item>
+        <item name="strokeColor">?colorSurface</item>
+    </style>
+
+    <style name="Theme.MovieApp.Button.Clean" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+    </style>
+
+
+    <!--┌───────────────────────────────────────────────────────────────────────────────────┐-->
+    <!--  → INPUT FIELD -->
+    <!--└───────────────────────────────────────────────────────────────────────────────────┘-->
+
+    <style name="Theme.MovieApp.InputField">
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:textAppearance">@style/Theme.MovieApp.Text.P1.Href</item>
+        <item name="hintTextAppearance">@style/Theme.MovieApp.Text.P1.Href</item>
+        <item name="maxLines">1</item>
+    </style>
+
+    <style name="Theme.MovieApp.InputFieldLayout.Outline" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    </style>
+
+    <style name="Theme.MovieApp.InputFieldLayout.Filled" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+    </style>
+
+    <style name="Theme.MovieApp.InputFieldLayout.Outline.Dropdown" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+    </style>
+
+    <style name="Theme.MovieApp.InputField.Outline">
+    </style>
+
+</resources>

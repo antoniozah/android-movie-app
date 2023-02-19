@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Material Colors -->
+    <color name="primary">#003568</color>
+    <color name="primary_light">#3f5e96</color>
+    <color name="primary_dark">#000f3d</color>
+    <color name="on_primary">#ffffff</color>
+
+    <color name="secondary">#adefd1</color>
+    <color name="secondary_light">#e0ffff</color>
+    <color name="secondary_dark">#7cbca0</color>
+    <color name="on_secondary">#000000</color>
+
+    <color name="background">#121212</color>
+    <color name="on_background">#FFFFFF</color>
+
+    <color name="surface">#222222</color>
+    <color name="surface_variant">#000000</color>
+    <color name="on_surface">#FFFFFF</color>
+
+    <color name="accent">#6aa5ff</color>
+
+    <color name="error">#e60000</color>
+    <color name="on_error">#ffffff</color>
+
+</resources>

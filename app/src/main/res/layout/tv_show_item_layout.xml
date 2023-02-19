@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="tvShow"
+            type="com.azachos.movieapp.models.TvShow" />
+        </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tvShowItemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        onItemClick="@{tvShow}">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/tvShowItemCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/tvShowItemThumbnail"
+                    loadImageFromUrl="@{tvShow.image.medium}"
+                    android:layout_width="180dp"
+                    android:layout_height="260dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvShowItemTitle"
+                    style="@style/Theme.MovieApp.Text.H5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@{tvShow.name}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvShowItemThumbnail"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Person of Interest" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvShowItemDescription"
+                    style="@style/Theme.MovieApp.Text.P1"
+                    setTvShowSummary="@{tvShow.summary}"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="5"
+                    app:layout_constraintEnd_toEndOf="@id/tvShowItemTitle"
+                    app:layout_constraintStart_toStartOf="@id/tvShowItemTitle"
+                    app:layout_constraintTop_toBottomOf="@id/tvShowItemTitle"
+                    tools:text="You are being watched. The government has a secret system, a machine that spies on you every hour of every day. I know because I built it." />
+
+                <ImageView
+                    android:id="@+id/tvShowItemRatingIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_rating_star"
+                    app:layout_constraintStart_toStartOf="@id/tvShowItemTitle"
+                    app:layout_constraintTop_toBottomOf="@id/tvShowItemDescription"
+                    app:tint="@color/secondary_dark" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvShowItemRatingText"
+                    style="@style/Theme.MovieApp.Text.P1.Bold"
+                    setTvShowRating="@{tvShow.rating}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:textColor="@color/secondary_dark"
+                    app:layout_constraintBottom_toBottomOf="@id/tvShowItemRatingIcon"
+                    app:layout_constraintStart_toEndOf="@id/tvShowItemRatingIcon"
+                    app:layout_constraintTop_toTopOf="@id/tvShowItemRatingIcon"
+                    tools:text="3.5" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvShowItemNetwork"
+                    style="@style/Theme.MovieApp.Text.P1.Bold"
+                    setTvShowNetwork="@{tvShow.network}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textAllCaps="true"
+                    android:textColor="?colorOnSurface"
+                    app:layout_constraintStart_toStartOf="@id/tvShowItemTitle"
+                    app:layout_constraintTop_toBottomOf="@id/tvShowItemRatingIcon"
+                    tools:text="HBO" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

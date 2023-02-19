@@ -1,19 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".TvShowDetailFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/tvFragShowDetail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/fragment_title_2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragments.showDetail.TvShowDetailFragment">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:paddingBottom="16dp"
+            android:nestedScrollingEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/tvShowDetailImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/_07679" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvShowDetailTitle"
+                    style="@style/Theme.MovieApp.Text.H4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:maxLines="3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvShowDetailImage"
+                    tools:text="There are many variations of passages of Lorem Ipsum" />
+
+                <RatingBar
+                    android:id="@+id/tvShowDetailRatingBar"
+                    style="@style/Theme.MovieApp.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:isIndicator="true"
+                    android:numStars="10"
+                    android:rating="6.5"
+                    android:stepSize="0.1"
+                    app:layout_constraintStart_toStartOf="@id/tvShowDetailTitle"
+                    app:layout_constraintTop_toBottomOf="@id/tvShowDetailTitle" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvShowDetailRatingText"
+                    style="@style/Theme.MovieApp.Text.H3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/secondary_dark"
+                    app:layout_constraintBottom_toBottomOf="@id/tvShowDetailRatingBar"
+                    app:layout_constraintStart_toEndOf="@id/tvShowDetailRatingBar"
+                    app:layout_constraintTop_toTopOf="@id/tvShowDetailRatingBar"
+                    tools:text="3.5" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvShowDetailSummary"
+                    style="@style/Theme.MovieApp.Text.P1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintEnd_toEndOf="@id/tvShowDetailTitle"
+                    app:layout_constraintStart_toStartOf="@id/tvShowDetailTitle"
+                    app:layout_constraintTop_toBottomOf="@id/tvShowDetailRatingBar"
+                    tools:text="orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvShowDetailGenres"
+                    style="@style/Theme.MovieApp.Text.P2.Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintEnd_toEndOf="@id/tvShowDetailTitle"
+                    app:layout_constraintStart_toStartOf="@id/tvShowDetailTitle"
+                    app:layout_constraintTop_toBottomOf="@id/tvShowDetailSummary"
+                    tools:text="Adventure, Action, Horror" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvShowDetailPremiereLabel"
+                    style="@style/Theme.MovieApp.Text.P1.Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toStartOf="@id/tvShowDetailTitle"
+                    app:layout_constraintTop_toBottomOf="@id/tvShowDetailGenres"
+                    android:text="@string/tv_shows_premiere"
+                    tools:text="Premiere: " />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvShowDetailPremiereContent"
+                    style="@style/Theme.MovieApp.Text.P1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/tvShowDetailPremiereLabel"
+                    app:layout_constraintStart_toEndOf="@id/tvShowDetailPremiereLabel"
+                    app:layout_constraintTop_toTopOf="@id/tvShowDetailPremiereLabel"
+                    tools:text="20/02/2018" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvShowDetailEndedLabel"
+                    style="@style/Theme.MovieApp.Text.P1.Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toStartOf="@id/tvShowDetailTitle"
+                    app:layout_constraintTop_toBottomOf="@id/tvShowDetailPremiereLabel"
+                    android:text="@string/tv_show_ended"
+                    tools:text="Ended: " />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvShowDetailEndedContent"
+                    style="@style/Theme.MovieApp.Text.P1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/tvShowDetailEndedLabel"
+                    app:layout_constraintStart_toEndOf="@id/tvShowDetailEndedLabel"
+                    app:layout_constraintTop_toTopOf="@id/tvShowDetailEndedLabel"
+                    tools:text="20/02/2022" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvShowDetailNetworkLabel"
+                    style="@style/Theme.MovieApp.Text.P1.Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    app:layout_constraintStart_toStartOf="@id/tvShowDetailTitle"
+                    app:layout_constraintTop_toBottomOf="@id/tvShowDetailEndedLabel"
+                    android:text="@string/tv_shows_network"
+                    tools:text="Network: " />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvShowDetailNetworkName"
+                    style="@style/Theme.MovieApp.Text.P1.Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/secondary_dark"
+                    app:layout_constraintBottom_toBottomOf="@id/tvShowDetailNetworkLabel"
+                    app:layout_constraintStart_toEndOf="@id/tvShowDetailNetworkLabel"
+                    app:layout_constraintTop_toTopOf="@id/tvShowDetailNetworkLabel"
+                    tools:text="HBO" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvShowDetailNetworkCountry"
+                    style="@style/Theme.MovieApp.Text.P1.Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/secondary_dark"
+                    app:layout_constraintBottom_toBottomOf="@id/tvShowDetailNetworkName"
+                    app:layout_constraintStart_toEndOf="@id/tvShowDetailNetworkName"
+                    app:layout_constraintTop_toTopOf="@id/tvShowDetailNetworkName"
+                    tools:text="America" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
